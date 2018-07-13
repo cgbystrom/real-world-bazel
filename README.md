@@ -3,8 +3,11 @@
 
 ## Using
 
-Simply [download the latest .zip file](https://github.com/cgbystrom/real-world-bazel/releases) of all collected BUILD files and use your favorite code search tool.
-
+ 1. Clone repo and make sure Python is installed
+ 1. Run `pip install -r requirements.txt`, preferably inside a virtualenv
+ 1. Run `python download.py`. This will download into the `work` directory. Expect 30+ mins of runtime.
+ 1. Browse the downloaded `BUILD` and `*.bzl` files and learn something new! :mortar_board: :bulb:
+ 
 ## Rationale
 For anyone outside Google, [Bazel][bazel] is quite a new build tool. It was open-sourced in 2015 and has since gained more and more traction. But being a new tool also means documentation, best practices and examples are not as easy to come by compared to other, more established build tools.
 
