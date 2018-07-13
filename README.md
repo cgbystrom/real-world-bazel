@@ -3,7 +3,7 @@
 
 ## Using
 
-Simply download the latest .zip file of all collected BUILD files and use your favorite code search tool.
+Simply [download the latest .zip file](https://github.com/cgbystrom/real-world-bazel/releases) of all collected BUILD files and use your favorite code search tool.
 
 ## Rationale
 For anyone outside Google, [Bazel][bazel] is quite a new build tool. It was open-sourced in 2015 and has since gained more and more traction. But being a new tool also means documentation, best practices and examples are not as easy to come by compared to other, more established build tools.
