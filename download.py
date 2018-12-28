@@ -48,7 +48,7 @@ def download_repo(repo_name, repo_dir):
             r.raw.decode_content = True
             shutil.copyfileobj(r.raw, f)
     elif r.status_code == 404:
-        print "Repo moved? Skipping!"
+        print("Repo moved? Skipping!")
         return
     else:
         raise Exception("Non-200 status! Status: " + str(r.status_code))
@@ -94,11 +94,11 @@ def main():
     for repo_name in repo_names:
         repo_dir = make_dir_path(work_dir, repo_name)
         if os.path.exists(repo_dir):
-            print "Repo already downloaded!"
+            print("Repo already downloaded!")
             continue
 
         os.makedirs(repo_dir)
-        print "Downloading %s/%s..." % (repo_name[0], repo_name[1])
+        print("Downloading %s/%s..." % (repo_name[0], repo_name[1]))
         download_repo(repo_name, repo_dir)
 
 main()
